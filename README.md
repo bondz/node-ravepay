@@ -47,8 +47,18 @@ This library supports RavePay staging and Production requests, you'll need to ge
 
 See [here](https://flutterwavedevelopers.readme.io/docs/setting-up-on-rave) on how to obtain your keys.
 
-```
+Using CJS
+
+```js
 const Ravepay = require('node-ravepay');
+
+const rave = new Ravepay(PUBLIC_KEY, SECRET_KEY);
+```
+
+Using Typescript or ESM
+
+```ts
+import Ravepay from 'node-ravepay';
 
 const rave = new Ravepay(PUBLIC_KEY, SECRET_KEY);
 ```
