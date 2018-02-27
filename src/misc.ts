@@ -23,7 +23,7 @@ export interface RaveMiscForexOptions {
 }
 
 class RaveMiscellaneous {
-  public exchangeEndpoint: string;
+  private exchangeEndpoint: string;
   private listBanksEndpoint: string;
   private getFeesEndpoint: string;
   private raveBase: RaveBase;

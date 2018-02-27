@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "typings": "./lib/index.d.ts",
   "scripts": {
-    "prepublish": "yarn tsc -p tsconfig.json"
+    "prepublish": "rm -rf ./lib && yarn tsc -p tsconfig.json"
   },
   "keywords": [
     "ravepay",
