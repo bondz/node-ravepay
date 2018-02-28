@@ -45,4 +45,5 @@ class RavePay {
   }
 }
 
+module.exports = RavePay;
 export default RavePay;
