@@ -9,7 +9,7 @@ import {
   PREAUTH_REFUNDORVOID_URL,
   SCHEMA_OPTIONS,
 } from '../constants';
-import { generateIntegrityHash } from '../security';
+import { generateIntegrityHash } from '../helpers/security';
 import { JoiSchema } from '../types';
 
 export interface RaveFlutterRef {
