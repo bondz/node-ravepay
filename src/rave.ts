@@ -2,7 +2,7 @@ import { post, get } from 'request';
 
 import { RaveOptions } from './types';
 import { API_LIVE_URL, API_SANDBOX_URL } from './constants';
-import { encrypt } from './security';
+import { encrypt } from './helpers/security';
 
 class RaveBase {
   readonly publicKey: string;

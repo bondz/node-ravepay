@@ -14,7 +14,7 @@ import {
   MpesaPayment,
 } from './paymentMethods';
 import { DIRECT_CHARGE_URL, ENCRYPTION_ALGO } from './constants';
-import { generateIntegrityHash } from './security';
+import { generateIntegrityHash } from './helpers/security';
 
 class RavePayments {
   private raveBase: RaveBase;
