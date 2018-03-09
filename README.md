@@ -26,6 +26,9 @@
   * [Get Fees](https://flutterwavedevelopers.readme.io/v2.0/reference#get-fees)
   * [List of Banks](https://flutterwavedevelopers.readme.io/v2.0/reference#list-of-banks)
   * [Exchange Rate](https://flutterwavedevelopers.readme.io/v2.0/reference#ratesforexinput)
+* Security
+  * Encryption
+  * Intergrity Hash
 
 ## Todo
 
@@ -118,5 +121,17 @@ rave.Validation.bankValidation
 ## Transactions
 
 ```
+rave.Transactions.verify
+rave.Transactions.query
+rave.Transactions.refund
+rave.Transactions.stopRecurringPayment
+rave.Transactions.listAllRecurringTransactions
+rave.Transactions.listSingleRecurringTransaction
+```
 
+## Security
+
+```
+rave.Security.encrypt
+rave.Security.generateIntegrityHash
 ```
