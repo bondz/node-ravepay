@@ -5,6 +5,7 @@ import RaveCardPreauth from './preauth/card';
 import RaveTransactions from './transactions';
 import RaveMiscellaneous from './misc';
 import RaveValidation from './validation';
+import RaveSecurity from './security';
 
 const raveDefaults: RaveOptions = {
   sandbox: false,
@@ -13,6 +14,7 @@ const raveDefaults: RaveOptions = {
 };
 
 class RavePay {
+  Security: RaveSecurity;
   Validation: RaveValidation;
   Misc: RaveMiscellaneous;
   Transactions: RaveTransactions;
@@ -42,6 +44,7 @@ class RavePay {
     this.Transactions = new RaveTransactions(this.rave);
     this.Misc = new RaveMiscellaneous(this.rave);
     this.Validation = new RaveValidation(this.rave);
+    this.Security = new RaveSecurity(this.rave);
   }
 }
 
